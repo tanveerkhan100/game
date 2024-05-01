@@ -28,7 +28,7 @@ document.querySelector('.check').addEventListener('click',function () {
 
     // high Value
     else if(guess > secretNumber){
-        if(score > 1){
+        if(score > 16){
             document.querySelector('.guessing').textContent = '📉 Too high';
         score--;
         document.querySelector('#score-value').textContent = score;
@@ -41,7 +41,7 @@ document.querySelector('.check').addEventListener('click',function () {
 
     // Low Value
     else if(guess < secretNumber){
-        if(score > 1){
+        if(score > 16){
             document.querySelector('.guessing').textContent = '📉 Too low';
         score--;
         document.querySelector('#score-value').textContent = score;
