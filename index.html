@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess My Number (1-20)</h1>
+    <section id="game">
+        <p class="number">?</p>
+        <p class="guessing">Start guessing...</p>
+        <input type="number" class="user-guess" min="1" max="20">
+        <button  class="btn check">Check!</button>
+        <p id="result"></p>
+    </section>
+    <section id="score">
+        <p>Score: <span id="score-value">20</span></p>
+        <p>High Score: <span id="high-score">0</span></p>
+        <button onclick="resetGame()" class="btn again">Play Again</button>
+    </section>
+
+
+    <script src="first.js"></script>
+</body>
+</html>
